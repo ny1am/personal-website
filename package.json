@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.9.1"
+    "astro": "^1.9.1",
+    "reset-css": "^5.0.1"
   },
   "license": "MIT"
 }
