@@ -7,11 +7,17 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prettier:check": "prettier --debug-check --plugin-search-dir=. .",
+    "prettier:fix": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
     "astro": "^1.9.1",
     "reset-css": "^5.0.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.2",
+    "prettier-plugin-astro": "^0.7.2"
+  }
 }
