@@ -4,7 +4,8 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "streetsidesoftware.code-spell-checker",
-    "jock.svg"
+    "jock.svg",
+    "bradlc.vscode-tailwindcss"
   ],
   "unwantedRecommendations": []
 }
