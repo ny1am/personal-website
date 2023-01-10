@@ -1,6 +1,6 @@
 # Personal website of Nazar Yavnyy
 
-[https://nazaryy.dev/](https://nazaryy.dev/)
+[https://nazaryy.dev](https://nazaryy.dev)
 
 Always work in progress
 
