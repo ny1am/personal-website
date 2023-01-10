@@ -1,4 +1,6 @@
 ---
+import { Picture } from '@astrojs/image/components';
+
 import BaseHead from '@/components/BaseHead.astro';
 import Footer from '@/components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '@/config';
@@ -14,10 +16,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '@/config';
   >
     <main class="grow">
       <div class="flex items-start flex-wrap gap-8 mt-12 sm:gap-16 sm:mt-32">
-        <img
-          src="/userpic.jpg"
+        <Picture
+          src={import('../../public/userpic.jpg')}
+          widths={[288, 416]}
+          sizes="(max-width: 640px) 144px, 208px"
+          aspectRatio="1:1"
+          class="shrink-0 aspect-square box-content rounded-full border border-gray-600 w-36 sm:w-52"
           alt=""
-          class="shrink-0 rounded-full border border-gray-600 w-36 sm:w-52"
         />
         <div class="mt-4 grow w-min min-w-[16rem]">
           <p>
