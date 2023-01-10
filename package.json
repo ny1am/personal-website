@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src/**/*.{ts,astro}"
+    "lint": "eslint src/**/*.{ts,astro}",
+    "netlify": "netlify open"
   },
   "dependencies": {
     "@astrojs/image": "^0.12.1",
@@ -24,6 +25,7 @@
     "eslint-plugin-astro": "^0.21.1",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "netlify-cli": "^12.7.0",
     "prettier": "^2.8.2",
     "prettier-plugin-astro": "^0.7.2",
     "typescript": "^4.9.4"
