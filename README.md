@@ -1,3 +1,9 @@
-## Personal website of Nazar Yavnyy
+# Personal website of Nazar Yavnyy
 
-wip...
+[https://nazaryy.dev/](https://nazaryy.dev/)
+
+Always work in progress
+
+## License
+
+MIT License. See `LICENSE` for more information.

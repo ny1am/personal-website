@@ -1,6 +1,6 @@
 {
   "name": "personal-website-nazar-yavnyy",
-  "type": "module",
+  "homepage": "https://nazaryy.dev",
   "private": true,
   "scripts": {
     "dev": "astro dev",
