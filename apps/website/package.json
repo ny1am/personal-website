@@ -8,5 +8,12 @@
     "astro": "astro",
     "lint": "eslint src/**/*.{ts,astro}",
     "netlify:deploy": "git checkout netlify && git merge main -X theirs --allow-unrelated-histories -m'build: bump version' && git push origin netlify"
+  },
+  "nx": {
+    "targets": {
+      "preview": {
+        "dependsOn": ["build"]
+      }
+    }
   }
 }

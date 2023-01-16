@@ -3,11 +3,11 @@
   "homepage": "https://nazaryy.dev",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter website dev",
-    "build": "pnpm --filter website build",
-    "preview": "pnpm --filter website preview",
-    "astro": "pnpm --filter website astro",
-    "lint": "pnpm -r lint",
+    "dev": "nx dev website",
+    "build": "nx build website",
+    "preview": "nx preview website",
+    "astro": "nx astro website",
+    "lint": "nx run-many --target=lint",
     "netlify:console": "netlify open",
     "netlify:deploy": "pnpm --filter website netlify:deploy"
   },
@@ -27,6 +27,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "netlify-cli": "^12.7.2",
+    "nx": "^15.5.1",
     "prettier": "^2.8.3",
     "prettier-plugin-astro": "^0.7.2",
     "typescript": "^4.9.4"

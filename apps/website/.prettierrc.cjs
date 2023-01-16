@@ -5,6 +5,14 @@ const rules = {
   singleQuote: true,
   semi: true,
   quoteProps: 'preserve',
+  'overrides': [
+    {
+      'files': '*.json',
+      'options': {
+        'parser': 'json',
+      },
+    },
+  ],
 };
 
 module.exports = {
