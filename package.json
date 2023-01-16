@@ -3,13 +3,13 @@
   "homepage": "https://nazaryy.dev",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "eslint src/**/*.{ts,astro}",
+    "dev": "pnpm --filter website dev",
+    "build": "pnpm --filter website build",
+    "preview": "pnpm --filter website preview",
+    "astro": "pnpm --filter website astro",
+    "lint": "pnpm -r lint",
     "netlify:console": "netlify open",
-    "netlify:deploy": "git checkout netlify && git merge main -X theirs --allow-unrelated-histories -m'build: bump version' && git push origin netlify"
+    "netlify:deploy": "pnpm --filter website netlify:deploy"
   },
   "dependencies": {
     "@astrojs/image": "^0.12.1",
