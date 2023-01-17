@@ -1,14 +1,9 @@
 module.exports = {
-  plugins: ['prettier'],
   extends: [
+    '../../.eslintrc.cjs',
     'plugin:astro/jsx-a11y-recommended',
     'plugin:astro/recommended',
-    'plugin:prettier/recommended',
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-  },
   overrides: [
     {
       files: ['*.astro'],
