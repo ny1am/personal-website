@@ -1,5 +1,14 @@
 {
-  "cSpell.words": ["astro", "astrojs", "tsconfigs"],
+  "cSpell.words": [
+    "astro",
+    "astrojs",
+    "domcontentloaded",
+    "Franko",
+    "jsonresume",
+    "Romex",
+    "tsconfigs",
+    "WCAG"
+  ],
   "eslint.validate": ["javascript", "astro", "typescript"],
   "typescript.tsdk": "node_modules/typescript/lib",
   "prettier.prettierPath": "node_modules/prettier",

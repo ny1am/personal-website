@@ -1,0 +1,9 @@
+{
+  "name": "generate-resume",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "ts-node --esm src/index.ts",
+    "lint": "eslint src/**/*"
+  }
+}
