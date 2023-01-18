@@ -8,8 +8,7 @@
     "preview": "nx preview website",
     "astro": "nx astro website",
     "lint": "nx run-many --target=lint",
-    "netlify:console": "netlify open",
-    "netlify:deploy": "pnpm --filter website netlify:deploy"
+    "netlify:console": "netlify open"
   },
   "dependencies": {
     "@astrojs/image": "^0.12.1",

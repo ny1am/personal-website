@@ -6,8 +6,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src/**/*.{ts,astro}",
-    "netlify:deploy": "git checkout netlify && git merge main -X theirs --allow-unrelated-histories -m'build: bump version' && git push origin netlify"
+    "lint": "eslint src/**/*.{ts,astro}"
   },
   "nx": {
     "implicitDependencies": ["generate-resume"],
