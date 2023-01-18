@@ -5,10 +5,11 @@ import puppeteer from 'puppeteer';
 import { render } from 'resumed';
 
 async function generatePdf() {
-  const fileName = path.resolve(process.cwd(), './public/resume.json');
-  const outputDir = path.resolve(process.cwd(), './dist');
+  const inputFileName = path.resolve(process.cwd(), './public/resume.json');
+  const outputDir = path.resolve(process.cwd(), '../../apps/website/public');
+  const outputFileName = 'resume.pdf';
 
-  const resume = JSON.parse(await fs.promises.readFile(fileName, 'utf-8'));
+  const resume = JSON.parse(await fs.promises.readFile(inputFileName, 'utf-8'));
   const html = await render(resume, theme);
 
   if (!fs.existsSync(outputDir)) {
@@ -20,7 +21,7 @@ async function generatePdf() {
 
   await page.setContent(html, { waitUntil: 'domcontentloaded' });
   await page.pdf({
-    path: outputDir + '/resume.pdf',
+    path: `${outputDir}/${outputFileName}`,
     format: 'a4',
     margin: { top: 30, bottom: 30, left: 40, right: 40 },
     printBackground: false,

@@ -10,9 +10,13 @@
     "netlify:deploy": "git checkout netlify && git merge main -X theirs --allow-unrelated-histories -m'build: bump version' && git push origin netlify"
   },
   "nx": {
+    "implicitDependencies": ["generate-resume"],
     "targets": {
       "preview": {
         "dependsOn": ["build"]
+      },
+      "build": {
+        "dependsOn": ["^build"]
       }
     }
   }

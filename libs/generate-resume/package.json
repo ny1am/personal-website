@@ -5,5 +5,12 @@
   "scripts": {
     "build": "ts-node --esm src/index.ts",
     "lint": "eslint src/**/*"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "outputs": ["{workspaceRoot}/apps/website/public/resume.pdf"]
+      }
+    }
   }
 }
