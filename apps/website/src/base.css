@@ -1,0 +1,9 @@
+@tailwind base;
+@layer base {
+  a {
+    @apply hover:underline;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
