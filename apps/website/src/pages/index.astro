@@ -1,45 +1,37 @@
 ---
 import { Picture } from '@astrojs/image/components';
 
-import BaseHead from '@/components/BaseHead.astro';
 import Footer from '@/components/Footer.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '@/config';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body
-    class="bg-gray-900 text-white p-4 max-w-4xl mx-auto flex flex-col min-h-screen min-w-[20rem]"
-  >
-    <main class="grow">
-      <div class="flex items-start flex-wrap gap-8 mt-12 sm:gap-16 sm:mt-[22%]">
-        <Picture
-          src={import('../../public/userpic.jpg')}
-          widths={[288, 416]}
-          sizes="(max-width: 640px) 144px, 208px"
-          aspectRatio="1:1"
-          class="shrink-0 aspect-square box-content rounded-full border border-gray-600 w-36 sm:w-52"
-          alt=""
-        />
-        <div class="mt-4 [&>p]:text-lg grow w-min min-w-[16rem]">
-          <p>
-            <span class="text-2xl mr-2">👋</span> I'm Nazar, a Javascript software engineer
-            that focuses on front end tools such as React and Typescript.
-          </p>
-          <p class="mt-4">
-            My area of expertise is React ecosystem, but I also have experience in backend
-            software development.
-          </p>
-          <div class="mt-4 [&>a]:mr-4 [&>a]:text-blue-400 [&>a:hover]:underline">
-            <a href="https://github.com/ny1am">GitHub</a>
-            <a href="https://www.linkedin.com/in/nazar-yavnyy-97bb26b1/">LinkedIn</a>
-          </div>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <main class="grow">
+    <div class="flex items-start flex-wrap gap-8 mt-12 sm:gap-16 sm:mt-[22%]">
+      <Picture
+        src={import('../../public/userpic.jpg')}
+        widths={[288, 416]}
+        sizes="(max-width: 640px) 144px, 208px"
+        aspectRatio="1:1"
+        class="shrink-0 aspect-square box-content rounded-full border border-gray-600 w-36 sm:w-52"
+        alt=""
+      />
+      <div class="mt-4 [&>p]:text-lg grow w-min min-w-[16rem]">
+        <p>
+          <span class="text-2xl mr-2">👋</span> I'm Nazar, a Javascript software engineer that
+          focuses on front end tools such as React and Typescript.
+        </p>
+        <p class="mt-4">
+          My area of expertise is React ecosystem, but I also have experience in backend
+          software development.
+        </p>
+        <div class="mt-4 [&>a]:mr-4 [&>a]:text-blue-400">
+          <a href="https://github.com/ny1am">GitHub</a>
+          <a href="https://www.linkedin.com/in/nazar-yavnyy-97bb26b1/">LinkedIn</a>
         </div>
       </div>
-    </main>
-    <Footer />
-  </body>
-</html>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
