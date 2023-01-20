@@ -2,6 +2,11 @@
 const today = new Date();
 ---
 
-<footer class="text-gray-400 text-sm text-right">
-  &copy; {today.getFullYear()} Nazar Yavnyy. All rights reserved.
+<footer
+  class="pt-6 mt-16 border-t border-t-slate-800 text-gray-400 text-sm flex justify-end gap-x-10"
+>
+  <nav>
+    <a href="resume.pdf" class="text-blue-400">Resume</a>
+  </nav>
+  <span>&copy; {today.getFullYear()} Nazar Yavnyy</span>
 </footer>
