@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "build": "ts-node --esm src/index.ts",
+    "validate": "resumed validate public/resume.json",
     "lint": "eslint src/**/*"
   },
   "nx": {
     "targets": {
       "build": {
-        "outputs": ["{workspaceRoot}/apps/website/public/resume.pdf"]
+        "outputs": ["{workspaceRoot}/apps/website/public/resume.pdf"],
+        "dependsOn": ["validate"]
       }
     }
   }
