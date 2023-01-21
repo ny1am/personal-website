@@ -8,7 +8,15 @@
     "summary": "I am a Javascript Developer that focuses on front end tools such as React and Typescript. I have a high bar for the quality of code and quality of user experience. My area of expertise is React ecosystem, but I also have experience in backend software development.",
     "location": {
       "address": "Lviv, Ukraine (currently in Croatia)"
-    }
+    },
+    "profiles": [
+      { "network": "GitHub", "username": "ny1am", "url": "https://github.com/ny1am" },
+      {
+        "network": "LinkedIn",
+        "username": "Nazar Yavnyy",
+        "url": "https://www.linkedin.com/in/nazar-yavnyy-97bb26b1/"
+      }
+    ]
   },
   "work": [
     {
