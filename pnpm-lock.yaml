@@ -7,27 +7,27 @@ importers:
       '@astrojs/image': ^0.13.0
       '@astrojs/tailwind': ^3.0.0
       '@typescript-eslint/parser': ^5.49.0
-      astro: ^2.0.1
+      astro: ^2.0.2
       eslint: ^8.32.0
       eslint-config-prettier: ^8.6.0
       eslint-plugin-astro: ^0.23.0
       eslint-plugin-jsx-a11y: ^6.7.1
       eslint-plugin-prettier: ^4.2.1
       jsonresume-theme-short: ^0.1.7
-      netlify-cli: ^12.9.2
+      netlify-cli: ^12.10.0
       nx: ^15.6.2
       prettier: ^2.8.3
-      prettier-plugin-astro: ^0.7.2
-      puppeteer: ^19.6.0
+      prettier-plugin-astro: ^0.8.0
+      puppeteer: ^19.6.1
       resumed: ^3.0.1
       sharp: ^0.31.3
       tailwindcss: ^3.2.4
       ts-node: ^10.9.1
       typescript: ^4.9.4
     dependencies:
-      '@astrojs/image': 0.13.0_astro@2.0.1+sharp@0.31.3
-      '@astrojs/tailwind': 3.0.0_wqmg6tpxhzmhmydqbmwwmbet34
-      astro: 2.0.1
+      '@astrojs/image': 0.13.0_astro@2.0.2+sharp@0.31.3
+      '@astrojs/tailwind': 3.0.0_ggucyeol7guntvaxu2okd3k5ze
+      astro: 2.0.2
       jsonresume-theme-short: 0.1.7
       sharp: 0.31.3
       tailwindcss: 3.2.4_ts-node@10.9.1
@@ -38,11 +38,11 @@ importers:
       eslint-plugin-astro: 0.23.0_eslint@8.32.0
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.32.0
       eslint-plugin-prettier: 4.2.1_cn4lalcyadplruoxa5mhp7j3dq
-      netlify-cli: 12.9.2
+      netlify-cli: 12.10.0
       nx: 15.6.2
       prettier: 2.8.3
-      prettier-plugin-astro: 0.7.2
-      puppeteer: 19.6.0
+      prettier-plugin-astro: 0.8.0
+      puppeteer: 19.6.1
       resumed: 3.0.1
       ts-node: 10.9.1_typescript@4.9.4
       typescript: 4.9.4
@@ -69,11 +69,12 @@ packages:
 
   /@astrojs/compiler/0.31.3:
     resolution: {integrity: sha512-WbA05QH5xkdaJ3XtzDuYOjtqsip2InW5rk156sSdaHs5qN2NroUHbzWZthHJwmNAAjQSGXVIj+O6jQj81zzX/Q==}
+    dev: false
 
   /@astrojs/compiler/1.0.1:
     resolution: {integrity: sha512-77aacobLKcL98NmhK3OBS5EHIrX9gs1ckB/vGSIdkVZuB7u51V4jh05I6W0tSvG7/86tALv6QtHTRZ8rLhFTbQ==}
 
-  /@astrojs/image/0.13.0_astro@2.0.1+sharp@0.31.3:
+  /@astrojs/image/0.13.0_astro@2.0.2+sharp@0.31.3:
     resolution: {integrity: sha512-18IlEsb/mau4ji9sR7+JVPFJHtgIk7Qh/Ol+Hh/JNcPn/oMrjP6FMU3VrNHPy5Ltvw1DyzkDV4wu+jYKU/V0Hw==}
     peerDependencies:
       astro: ^2.0.0
@@ -83,7 +84,7 @@ packages:
         optional: true
     dependencies:
       '@altano/tiny-async-pool': 1.0.2
-      astro: 2.0.1
+      astro: 2.0.2
       http-cache-semantics: 4.1.0
       image-size: 1.0.2
       kleur: 4.1.5
@@ -111,13 +112,13 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/2.0.0_astro@2.0.1:
-    resolution: {integrity: sha512-PqDxi3L2jsxLWjsWRyn+BkaDtHKq2+ECI7PlW9NsEwu2jKKgl7sXj57s/Wjhyctr4efFdzewFArVFm1Gnb3rtw==}
+  /@astrojs/markdown-remark/2.0.1_astro@2.0.2:
+    resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
     peerDependencies:
-      astro: ^2.0.0
+      astro: ^2.0.2
     dependencies:
       '@astrojs/prism': 2.0.0
-      astro: 2.0.1
+      astro: 2.0.2
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.0
       rehype-raw: 6.1.1
@@ -141,14 +142,14 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind/3.0.0_wqmg6tpxhzmhmydqbmwwmbet34:
+  /@astrojs/tailwind/3.0.0_ggucyeol7guntvaxu2okd3k5ze:
     resolution: {integrity: sha512-Ul0LzTIW+QD/qXUaTDSDoe/uNOPSAX6Ce7yTMzl7v+9OlZ4vlgkj1CUq/WkhlKnJ2+SnJvLArEj6yYs/M2V8nA==}
     peerDependencies:
       astro: ^2.0.0
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.0.1
+      astro: 2.0.2
       autoprefixer: 10.4.13_postcss@8.4.20
       postcss: 8.4.20
       postcss-load-config: 4.0.1_ra2vnoek4vhbzktaezawwqbin4
@@ -2625,14 +2626,14 @@ packages:
       - supports-color
     dev: true
 
-  /astro/2.0.1:
-    resolution: {integrity: sha512-EXq1lks+ylmArhtUs99PQelK0bQ3VS+698OO9UYkjG08Bd02ficqihsRGBnhEor7U9989hZb+1p4y0rNpgKH8g==}
+  /astro/2.0.2:
+    resolution: {integrity: sha512-47N1jLWNxSri7kWfIfgcEnQJZWTvd0gXhNC3P2ZHiiurl4nOxFC5ULsW5MDDTjTzQ1S7y1RoaL9XxYm+Rury7w==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 1.0.1
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.0.0_astro@2.0.1
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.2
       '@astrojs/telemetry': 2.0.0
       '@astrojs/webapi': 2.0.0
       '@babel/core': 7.20.7
@@ -8143,8 +8144,8 @@ packages:
     resolution: {integrity: sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==}
     dev: true
 
-  /netlify-cli/12.9.2:
-    resolution: {integrity: sha512-QHkl9Q5/vHh2R6107/PF2hW/r5xy5YtXi4z7ypCGy9UlYyJUB9J0aCH5kXhefLYOoFAQ8e9In0nd1G7JgFo8Cw==}
+  /netlify-cli/12.10.0:
+    resolution: {integrity: sha512-dXuDaicUEDqIRhqBrmnRW3sPsevlBYJqhwrvH24xHEHYwVrGh9oY12zljeUyMlFF+uram75mqmrku6LGleVaZg==}
     engines: {node: ^14.16.0 || >=16.0.0}
     hasBin: true
     requiresBuild: true
@@ -9389,6 +9390,17 @@ packages:
       prettier: 2.8.3
       sass-formatter: 0.7.5
       synckit: 0.8.4
+    dev: false
+
+  /prettier-plugin-astro/0.8.0:
+    resolution: {integrity: sha512-kt9wk33J7HvFGwFaHb8piwy4zbUmabC8Nu+qCw493jhe96YkpjscqGBPy4nJ9TPy9pd7+kEx1zM81rp+MIdrXg==}
+    engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
+    dependencies:
+      '@astrojs/compiler': 1.0.1
+      prettier: 2.8.3
+      sass-formatter: 0.7.5
+      synckit: 0.8.4
+    dev: true
 
   /prettier/2.8.3:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
@@ -9521,8 +9533,8 @@ packages:
       escape-goat: 4.0.0
     dev: true
 
-  /puppeteer-core/19.6.0:
-    resolution: {integrity: sha512-GvqWdHr9eY/MFR5pXf9o0apnrTmG0hhS7/TtCPfeAvCbaUS1bsLMZWxNGvI/QbviRu4xxi6HrR7VW4x/4esq1Q==}
+  /puppeteer-core/19.6.1:
+    resolution: {integrity: sha512-TdbqPYGHRgaqO1XPOM5ThE7uSs5NsYraOUU546okJz7jR9He5wnGuFd6LppoeWt8a4eM5RgzmICxeDUD5QwQtA==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
@@ -9542,8 +9554,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /puppeteer/19.6.0:
-    resolution: {integrity: sha512-KpRjn/bosTWe8xOQ/F5J1UmQ4inR77ADddn8G6MqMPp/y9Tl+7EycXgrjO0/3i/OQfHi5bsvkTKXRkm0ieo/ew==}
+  /puppeteer/19.6.1:
+    resolution: {integrity: sha512-gcqNilThyBPrUMvo2UZNG4KVoMjhCfCV7/84mTVk3oo0k65iO7hEKrB4waiJ15O0MHQpM79+XBHavRgBbRXUWQ==}
     engines: {node: '>=14.1.0'}
     requiresBuild: true
     dependencies:
@@ -9551,7 +9563,7 @@ packages:
       https-proxy-agent: 5.0.1
       progress: 2.0.3
       proxy-from-env: 1.1.0
-      puppeteer-core: 19.6.0
+      puppeteer-core: 19.6.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
