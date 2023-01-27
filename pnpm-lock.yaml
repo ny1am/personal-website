@@ -13,6 +13,7 @@ importers:
       eslint-plugin-astro: ^0.23.0
       eslint-plugin-jsx-a11y: ^6.7.1
       eslint-plugin-prettier: ^4.2.1
+      eslint-plugin-simple-import-sort: ^9.0.0
       jsonresume-theme-short: ^0.1.7
       netlify-cli: ^12.10.0
       nx: ^15.6.2
@@ -38,6 +39,7 @@ importers:
       eslint-plugin-astro: 0.23.0_eslint@8.32.0
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.32.0
       eslint-plugin-prettier: 4.2.1_cn4lalcyadplruoxa5mhp7j3dq
+      eslint-plugin-simple-import-sort: 9.0.0_eslint@8.32.0
       netlify-cli: 12.10.0
       nx: 15.6.2
       prettier: 2.8.3
@@ -4581,6 +4583,14 @@ packages:
       eslint-config-prettier: 8.6.0_eslint@8.32.0
       prettier: 2.8.3
       prettier-linter-helpers: 1.0.0
+    dev: true
+
+  /eslint-plugin-simple-import-sort/9.0.0_eslint@8.32.0:
+    resolution: {integrity: sha512-PtrLjyXP8kjRneWT1n0b99y/2Fyup37we7FVoWsI61/O7x4ztLohzhep/pxI/cYlECr/cQ2j6utckdvWpVwXNA==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      eslint: 8.32.0
     dev: true
 
   /eslint-scope/7.1.1:

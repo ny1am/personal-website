@@ -1,6 +1,6 @@
 import fs from 'fs';
-import path from 'path';
 import * as theme from 'jsonresume-theme-short';
+import path from 'path';
 import puppeteer from 'puppeteer';
 import { render } from 'resumed';
 
