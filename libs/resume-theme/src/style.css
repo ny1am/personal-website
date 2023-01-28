@@ -28,13 +28,10 @@ blockquote {
   margin: 0;
   margin-bottom: 1em;
 }
+
 #resume {
   margin: 2em 2em 2em 2.5em;
   max-width: 760px;
-}
-
-/* Resume heading */
-.heading header {
 }
 
 .heading header h1 {
