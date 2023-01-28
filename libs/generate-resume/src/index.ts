@@ -1,10 +1,15 @@
+import theme from '@pw/resume-theme';
 import fs from 'fs';
-import * as theme from 'jsonresume-theme-short';
 import path from 'path';
 import puppeteer from 'puppeteer';
 import { render } from 'resumed';
 
-async function generatePdf({ inputFilePath, outputFilePath }) {
+type GeneratePDF = {
+  inputFilePath: string;
+  outputFilePath: string;
+};
+
+async function generatePdf({ inputFilePath, outputFilePath }: GeneratePDF) {
   const resume = JSON.parse(await fs.promises.readFile(inputFilePath, 'utf-8'));
   const html = await render(resume, theme);
 

@@ -7,7 +7,11 @@
     "validate": "resumed validate public/resume.json",
     "lint": "eslint src/**/*"
   },
+  "dependencies": {
+    "@pw/resume-theme": "workspace:resume-theme@*"
+  },
   "nx": {
+    "implicitDependencies": ["resume-theme"],
     "targets": {
       "build": {
         "outputs": ["{workspaceRoot}/apps/website/public/resume.pdf"],
