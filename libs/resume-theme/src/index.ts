@@ -1,6 +1,5 @@
 import fs from 'fs';
 import Handlebars from 'handlebars';
-import path from 'path';
 import { fileURLToPath } from 'url';
 
 import { dateFormatter } from './utils.js';
@@ -10,8 +9,8 @@ Handlebars.registerHelper('date', function dateHelper(date: string) {
 });
 
 function rawFile(fileName: string) {
-  const dir = path.dirname(fileURLToPath(import.meta.url));
-  return fs.readFileSync(path.resolve(dir, `./${fileName}`), 'utf-8');
+  const filePath = fileURLToPath(new URL(fileName, import.meta.url));
+  return fs.readFileSync(filePath, 'utf-8');
 }
 
 export default {
