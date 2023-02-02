@@ -8,14 +8,14 @@
     "lint": "eslint src/**/*"
   },
   "dependencies": {
-    "@pw/resume-theme": "workspace:resume-theme@*"
+    "@pw/jsonresume-theme-solid": "workspace:jsonresume-theme-solid@*"
   },
   "nx": {
-    "implicitDependencies": ["resume-theme"],
+    "implicitDependencies": ["jsonresume-theme-solid"],
     "targets": {
       "build": {
         "outputs": ["{workspaceRoot}/apps/website/public/resume.pdf"],
-        "dependsOn": ["validate"]
+        "dependsOn": ["validate", "^build"]
       }
     }
   }

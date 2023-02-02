@@ -1,10 +1,18 @@
 body {
   background: #fff;
-  font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
   margin: 0 0;
   margin-bottom: 100px;
 }
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+}
+
 em {
   color: #999;
 }

@@ -6,8 +6,7 @@
     "streetsidesoftware.code-spell-checker",
     "jock.svg",
     "bradlc.vscode-tailwindcss",
-    "nrwl.angular-console",
-    "itsmeadarsh.vsc-handlebars-ext"
+    "nrwl.angular-console"
   ],
   "unwantedRecommendations": []
 }

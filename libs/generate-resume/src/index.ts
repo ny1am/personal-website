@@ -1,4 +1,4 @@
-import theme from '@pw/resume-theme';
+import theme from '@pw/jsonresume-theme-solid';
 import fs from 'fs';
 import path from 'path';
 import puppeteer from 'puppeteer';

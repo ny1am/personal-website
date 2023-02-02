@@ -1,0 +1,19 @@
+{
+  "name": "jsonresume-theme-solid",
+  "type": "module",
+  "private": true,
+  "files": ["dist"],
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "node": "./dist/main.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "vite dev"
+  }
+}

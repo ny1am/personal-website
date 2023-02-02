@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Nazar Yavnyy",
+    "label": "Javascript software engineer",
+    "email": "nazar.yavnyy@pm.me",
+    "website": "https://nazaryy.dev",
+    "summary": "I am a Javascript Developer that focuses on front end tools such as React and Typescript. I have a high bar for the quality of code and quality of user experience. My area of expertise is React ecosystem, but I also have experience in backend software development.",
+    "location": {
+      "address": "Lviv, Ukraine (currently in Croatia)"
+    }
+  },
+  "work": [
+    {
+      "name": "Agena Tech",
+      "location": "Remote",
+      "url": "https://agenatech.com/",
+      "position": "Senior frontend software engineer",
+      "startDate": "2021-10-01",
+      "endDate": "2022-12-01",
+      "summary": "Agena Tech is a Swedish company with many projects and products from e-commerce to healthcare. I designed architecture and led a small team on a multi-collaborative WCAG-compliant healthcare project. In parallel, I worked in a dynamic, fast-paced team on multiple startup/e-commerce products.",
+      "highlights": [
+        "Typescript",
+        "React.js / Next.js / React Query",
+        "Node.js, GraphCMS / GraphQL",
+        "SASS, TailwindCSS"
+      ]
+    },
+    {
+      "name": "Pragma-IT",
+      "location": "Remote",
+      "url": "https://pragmait.com/",
+      "position": "Senior frontend software engineer",
+      "startDate": "2019-03-01",
+      "endDate": "2021-09-30",
+      "summary": "Pragma-IT is a US-based healthcare company that provides software for therapists on the go. I led a small frontend team in multiple projects. Architected and developed low-code environment to easily create and maintain complex clinical note forms.",
+      "highlights": ["Typescript", "React.js / Redux"]
+    },
+    {
+      "name": "Freelance",
+      "location": "Remote",
+      "position": "Frontend software engineer",
+      "startDate": "2017-10-01",
+      "endDate": "2019-02-28",
+      "summary": "As a freelancer, I worked on multiple small and mid-size projects. I learned how to work and survive in an environment of remote and distributed teams.",
+      "highlights": [
+        "React.js, Redux / Redux saga",
+        "React Native / Expo",
+        "Architected and developed multiple React Native apps that got tens of thousands of users"
+      ]
+    },
+    {
+      "name": "REMIT",
+      "location": "Lviv, Ukraine",
+      "position": "Frontend software engineer",
+      "startDate": "2016-08-01",
+      "endDate": "2017-09-30",
+      "summary": "REMIT is a Ukrainian outsourcing company with exposure to the Swedish tech industry. I created many web apps from scratch, gained experience of working in a huge enterprise project with multiple teams and products.",
+      "highlights": ["React.js / Redux, React Boilerplate", "Angular"]
+    },
+    {
+      "name": "RomexSoft",
+      "location": "Lviv, Ukraine",
+      "position": "Fullstack software engineer",
+      "startDate": "2011-02-01",
+      "endDate": "2016-07-01",
+      "summary": "RomexSoft is an outsourcing company that develops quality software. My primary role was to develop new features for the existing projects. I focused on developing soft skills and learning how to work as a tech team with tight deadlines. Learned how to use Git, JIRA for a benefit of the team. Owned multiple features on a high-quality healthcare system.",
+      "highlights": ["SQL / Hibernate", "Java / Spring / REST", "jQuery / Vanilla JS"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "London Institute of Leadership and Management",
+      "url": "https://www.i-l-m.com/",
+      "studyType": "Lead-IT Program",
+      "startDate": "2017-10-01",
+      "endDate": "2018-03-31"
+    },
+    {
+      "institution": "Ivan Franko National University of Lviv",
+      "url": "https://lnu.edu.ua/en/",
+      "area": "Applied Mathematics and Informatics",
+      "studyType": "Master",
+      "startDate": "2006-09-01",
+      "endDate": "2011-06-30"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "keywords": [
+        "Javascript / Typescript",
+        "React.js / Next.js",
+        "Node.js",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "keywords": ["React Native / Expo"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Upper-Intermediate"
+    },
+    {
+      "language": "Ukrainian",
+      "fluency": "Native speaker"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "version": "v1.0.0",
+    "lastModified": "2023-01-27T00:00:00"
+  }
+}
