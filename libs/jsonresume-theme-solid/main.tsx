@@ -3,15 +3,14 @@ import { renderToString } from 'solid-js/web';
 import template from './index.html?raw';
 import css from './styles.css?raw';
 import App from './src/App';
+import { ResumeSchema } from './gen/schema.d';
 
-type Schema = Record<string, string>;
-
-function renderApp(schema: Schema) {
+function renderApp(schema: ResumeSchema) {
   return renderToString(() => <App schema={schema} />);
 }
 
 export type Theme = {
-  render: (schema: Schema) => Promise<string>;
+  render: (schema: ResumeSchema) => Promise<string>;
 };
 
 const theme: Theme = {

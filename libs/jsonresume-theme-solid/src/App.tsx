@@ -1,14 +1,14 @@
 import { For } from 'solid-js';
 import { formatDate } from './utils';
 
-type Schema = Record<string, any>;
+import { ResumeSchema } from '../gen/schema.d';
 
 type Props = {
-  schema: Schema;
+  schema: ResumeSchema;
 };
 
 const App = ({ schema }: Props) => {
-  const { basics, skills = [], work = [], education = [], languages = [] } = schema;
+  const { basics = {}, skills = [], work = [], education = [], languages = [] } = schema;
   return (
     <div id="resume">
       <section class="heading">
@@ -21,9 +21,9 @@ const App = ({ schema }: Props) => {
               </span>
             )}
             {basics.phone && <span class="detail">{basics.phone}</span>}
-            {basics.website && (
+            {basics.url && (
               <span class="detail">
-                <a href={basics.website}>{basics.website}</a>
+                <a href={basics.url}>{basics.url}</a>
               </span>
             )}
           </div>
@@ -38,7 +38,7 @@ const App = ({ schema }: Props) => {
               <div class="item">
                 {skill.name && <div class="name">{skill.name}</div>}
                 {(skill.keywords ?? []).length > 0 && (
-                  <div class="keywords">{skill.keywords.join(', ')}</div>
+                  <div class="keywords">{(skill.keywords ?? []).join(', ')}</div>
                 )}
               </div>
             )}

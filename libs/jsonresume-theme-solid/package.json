@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "vite dev"
+    "dev": "vite dev",
+    "gen": "ts-node --esm --project=./scripts/tsconfig.exec.json ./scripts/schema.ts"
   }
 }
