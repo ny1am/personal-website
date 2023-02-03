@@ -16,7 +16,7 @@ export default [
       alias({
         entries: [{ find: /^(.*)\.(html|css)\?raw$/, replacement: '$1.$2' }],
       }),
-      string({ include: '*.{html,css}' }),
+      string({ include: '**/*.{html,css}' }),
       babel({
         extensions,
         babelHelpers: 'bundled',

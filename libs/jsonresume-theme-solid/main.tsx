@@ -1,7 +1,7 @@
 import { renderToString } from 'solid-js/web';
 
-import template from './index.html?raw';
-import css from './styles.css?raw';
+import template from './src/index.html?raw';
+import css from './src/styles.css?raw';
 import App from './src/App';
 import { ResumeSchema } from './gen/schema.d';
 
@@ -18,7 +18,7 @@ const theme: Theme = {
     const appHtml = await renderApp(schema);
     const html = template
       .replace(`<link href="styles.css" rel="stylesheet" />`, `<style>${css}</style>`)
-      .replace(`<script src="/dev.tsx" type="module"></script>`, appHtml);
+      .replace(`<script src="/dev/index.tsx" type="module"></script>`, appHtml);
     return html;
   },
 };
