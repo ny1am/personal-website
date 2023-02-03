@@ -1,9 +1,9 @@
 import { renderToString } from 'solid-js/web';
 
+import { ResumeSchema } from './gen/schema.d';
+import App from './src/App';
 import template from './src/index.html?raw';
 import css from './src/styles.css?raw';
-import App from './src/App';
-import { ResumeSchema } from './gen/schema.d';
 
 function renderApp(schema: ResumeSchema) {
   return renderToString(() => <App schema={schema} />);

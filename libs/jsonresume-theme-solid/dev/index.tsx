@@ -1,6 +1,6 @@
 /* @refresh reload */
-import { render } from 'solid-js/web';
 import schema from '@pw/data/public/resume.json';
+import { render } from 'solid-js/web';
 
 import App from '../src/App';
 

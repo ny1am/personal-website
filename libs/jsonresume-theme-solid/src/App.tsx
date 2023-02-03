@@ -1,7 +1,7 @@
 import { For } from 'solid-js';
-import { formatDate } from './utils';
 
 import { ResumeSchema } from '../gen/schema.d';
+import { formatDate } from './utils';
 
 type Props = {
   schema: ResumeSchema;
