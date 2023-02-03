@@ -32,6 +32,6 @@ async function generatePdf({ inputFilePath, outputFilePath }: GeneratePDF) {
 }
 
 generatePdf({
-  inputFilePath: path.resolve(process.cwd(), './public/resume.json'),
+  inputFilePath: path.resolve(process.cwd(), '../../data/public/resume.json'),
   outputFilePath: path.resolve(process.cwd(), '../../apps/website/public/resume.pdf'),
 });

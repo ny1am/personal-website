@@ -86,6 +86,9 @@ importers:
   apps/website:
     specifiers: {}
 
+  data:
+    specifiers: {}
+
   libs/generate-resume:
     specifiers:
       '@pw/jsonresume-theme-solid': workspace:jsonresume-theme-solid@*
@@ -93,7 +96,10 @@ importers:
       '@pw/jsonresume-theme-solid': link:../jsonresume-theme-solid
 
   libs/jsonresume-theme-solid:
-    specifiers: {}
+    specifiers:
+      '@pw/data': workspace:data@*
+    dependencies:
+      '@pw/data': link:../../data
 
 packages:
 

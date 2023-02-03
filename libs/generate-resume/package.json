@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "build": "ts-node --esm src/index.ts",
-    "validate": "resumed validate public/resume.json",
+    "validate": "resumed validate ../../data/public/resume.json",
     "lint": "eslint src/**/*"
   },
   "dependencies": {
     "@pw/jsonresume-theme-solid": "workspace:jsonresume-theme-solid@*"
   },
   "nx": {
-    "implicitDependencies": ["jsonresume-theme-solid"],
+    "implicitDependencies": ["jsonresume-theme-solid", "data"],
     "targets": {
       "build": {
         "outputs": ["{workspaceRoot}/apps/website/public/resume.pdf"],
