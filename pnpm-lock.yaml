@@ -24,6 +24,7 @@ importers:
       eslint-plugin-jsx-a11y: ^6.7.1
       eslint-plugin-prettier: ^4.2.1
       eslint-plugin-simple-import-sort: ^10.0.0
+      eslint-plugin-solid: ^0.9.4
       json-schema-to-typescript: ^11.0.3
       netlify-cli: ^12.10.0
       nx: ^15.6.3
@@ -67,6 +68,7 @@ importers:
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.33.0
       eslint-plugin-prettier: 4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq
       eslint-plugin-simple-import-sort: 10.0.0_eslint@8.33.0
+      eslint-plugin-solid: 0.9.4_4vsywjlpuriuw3tl5oq6zy5a64
       json-schema-to-typescript: 11.0.3
       netlify-cli: 12.10.0_@types+node@18.11.18
       nx: 15.6.3
@@ -5824,6 +5826,24 @@ packages:
       eslint: 8.33.0
     dev: true
 
+  /eslint-plugin-solid/0.9.4_4vsywjlpuriuw3tl5oq6zy5a64:
+    resolution: {integrity: sha512-AGS7XnkepV2jiFwBMSg3FW7GKe6uJwgx65nnRC7I6s0dbV7rGpouwj9KDkXV5NJHQENxACeOLUTgjyMi3JeHNw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@typescript-eslint/utils': 5.50.0_4vsywjlpuriuw3tl5oq6zy5a64
+      eslint: 8.33.0
+      is-html: 2.0.0
+      jsx-ast-utils: 3.3.3
+      kebab-case: 1.0.2
+      known-css-properties: 0.24.0
+      style-to-object: 0.3.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -7362,6 +7382,11 @@ packages:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
     dev: false
 
+  /html-tags/3.2.0:
+    resolution: {integrity: sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==}
+    engines: {node: '>=8'}
+    dev: true
+
   /html-void-elements/2.0.1:
     resolution: {integrity: sha512-0quDb7s97CfemeJAnW9wC0hw78MtW7NU3hqtCD75g2vFlDLt36llsYD7uB7SUzojLMP24N5IatXf7ylGXiGG9A==}
     dev: false
@@ -7551,7 +7576,6 @@ packages:
 
   /inline-style-parser/0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
-    dev: false
 
   /inquirer-autocomplete-prompt/1.4.0_inquirer@6.5.2:
     resolution: {integrity: sha512-qHgHyJmbULt4hI+kCmwX92MnSxDs/Yhdt4wPA30qnoa01OF6uTXV8yvH4hKXgdaTNmkZ9D01MHjqKYEuJN+ONw==}
@@ -7803,6 +7827,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: 2.1.1
+
+  /is-html/2.0.0:
+    resolution: {integrity: sha512-S+OpgB5i7wzIue/YSE5hg0e5ZYfG3hhpNh9KGl6ayJ38p7ED6wxQLd1TV91xHpcTvw90KMJ9EwN3F/iNflHBVg==}
+    engines: {node: '>=8'}
+    dependencies:
+      html-tags: 3.2.0
+    dev: true
 
   /is-installed-globally/0.4.0:
     resolution: {integrity: sha512-iwGqO3J21aaSkC7jWnHP/difazwS7SFeIqxv6wEtLU8Y5KlzFTjyqcSIT0d8s4+dDhKytsk9PJZ2BkS5eZwQRQ==}
@@ -8286,6 +8317,10 @@ packages:
     resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
     dev: true
 
+  /kebab-case/1.0.2:
+    resolution: {integrity: sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==}
+    dev: true
+
   /keep-func-props/4.0.1:
     resolution: {integrity: sha512-87ftOIICfdww3SxR5P1veq3ThBNyRPG0JGL//oaR08v0k2yTicEIHd7s0GqSJfQvlb+ybC3GiDepOweo0LDhvw==}
     engines: {node: '>=12.20.0'}
@@ -8343,6 +8378,10 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
     dev: false
+
+  /known-css-properties/0.24.0:
+    resolution: {integrity: sha512-RTSoaUAfLvpR357vWzAz/50Q/BmHfmE6ETSWfutT0AJiw10e6CmcdYRQJlLRd95B53D0Y2aD1jSxD3V3ySF+PA==}
+    dev: true
 
   /kuler/2.0.0:
     resolution: {integrity: sha512-Xq9nH7KlWZmXAtodXDDRE7vs6DU1gTU8zYDHDiWLSip45Egwq3plLHzPn27NgvzL2r1LMPC1vdqh98sQxtqj4A==}
@@ -12215,7 +12254,6 @@ packages:
     resolution: {integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==}
     dependencies:
       inline-style-parser: 0.1.1
-    dev: false
 
   /suf-log/2.5.3:
     resolution: {integrity: sha512-KvC8OPjzdNOe+xQ4XWJV2whQA0aM1kGVczMQ8+dStAO6KfEB140JEVQ9dE76ONZ0/Ylf67ni4tILPJB41U0eow==}

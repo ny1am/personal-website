@@ -5,7 +5,8 @@
     "dev": "nx dev website",
     "build": "nx build website",
     "preview": "nx preview website",
-    "lint": "nx run-many --target=lint"
+    "lint": "nx run-many --target=lint",
+    "resume:dev": "nx dev jsonresume-theme-solid"
   },
   "dependencies": {
     "@astrojs/image": "^0.14.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-solid": "^0.9.4",
     "json-schema-to-typescript": "^11.0.3",
     "netlify-cli": "^12.10.0",
     "nx": "^15.6.3",
