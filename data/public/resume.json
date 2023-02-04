@@ -14,7 +14,7 @@
       {
         "network": "LinkedIn",
         "username": "Nazar Yavnyy",
-        "url": "https://www.linkedin.com/in/nazar-yavnyy-97bb26b1/"
+        "url": "https://www.linkedin.com/in/nazar-yavnyy-97bb26b1"
       }
     ]
   },
@@ -22,7 +22,7 @@
     {
       "name": "Agena Tech",
       "location": "Remote",
-      "url": "https://agenatech.com/",
+      "url": "https://agenatech.com",
       "position": "Senior frontend software engineer",
       "startDate": "2021-10-01",
       "endDate": "2022-11-01",
@@ -37,7 +37,7 @@
     {
       "name": "Pragma-IT",
       "location": "Remote",
-      "url": "https://pragmait.com/",
+      "url": "https://pragmait.com",
       "position": "Senior frontend software engineer",
       "startDate": "2019-03-01",
       "endDate": "2021-09-30",
@@ -79,14 +79,14 @@
   "education": [
     {
       "institution": "London Institute of Leadership and Management",
-      "url": "https://www.i-l-m.com/",
+      "url": "https://www.i-l-m.com",
       "studyType": "Lead-IT Program",
       "startDate": "2017-10-01",
       "endDate": "2018-03-31"
     },
     {
       "institution": "Ivan Franko National University of Lviv",
-      "url": "https://lnu.edu.ua/en/",
+      "url": "https://lnu.edu.ua/en",
       "area": "Applied Mathematics and Informatics",
       "studyType": "Master",
       "startDate": "2006-09-01",
