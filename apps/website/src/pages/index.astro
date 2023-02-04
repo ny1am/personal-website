@@ -2,6 +2,7 @@
 import { Picture } from '@astrojs/image/components';
 
 import Footer from '@/components/Footer.astro';
+import Socials from '@/components/Socials.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/config';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 ---
@@ -26,10 +27,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
           My area of expertise is React ecosystem, but I also have experience in backend
           software development.
         </p>
-        <div class="mt-4 [&>a]:mr-4 [&>a]:text-blue-400">
-          <a href="https://github.com/ny1am">GitHub</a>
-          <a href="https://www.linkedin.com/in/nazar-yavnyy-97bb26b1/">LinkedIn</a>
-        </div>
+        <Socials class="mt-4" />
       </div>
     </div>
   </main>

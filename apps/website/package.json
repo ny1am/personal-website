@@ -9,8 +9,11 @@
     "astro": "astro",
     "lint": "eslint src/**/*.{ts,astro}"
   },
+  "dependencies": {
+    "@pw/data": "workspace:data@*"
+  },
   "nx": {
-    "implicitDependencies": ["generate-resume"],
+    "implicitDependencies": ["generate-resume", "data"],
     "targets": {
       "preview": {
         "dependsOn": ["build"]

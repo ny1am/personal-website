@@ -1,0 +1,14 @@
+---
+import resume from '@pw/data/public/resume.json';
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+const items = resume.basics.profiles.map(({ network, url }) => ({ url, text: network }));
+---
+
+<div class:list={['[&>a]:mr-5 [&>a]:text-blue-400', className]}>
+  {items.map(({ text, url }) => <a href={url}>{text}</a>)}
+</div>

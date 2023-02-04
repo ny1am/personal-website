@@ -86,7 +86,10 @@ importers:
       vite-plugin-solid: 2.5.0_solid-js@1.6.10+vite@4.1.1
 
   apps/website:
-    specifiers: {}
+    specifiers:
+      '@pw/data': workspace:data@*
+    dependencies:
+      '@pw/data': link:../../data
 
   data:
     specifiers: {}
