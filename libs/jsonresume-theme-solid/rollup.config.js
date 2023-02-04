@@ -2,6 +2,7 @@ import alias from '@rollup/plugin-alias';
 import { babel } from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
+import postcss from 'rollup-plugin-postcss';
 import { string } from 'rollup-plugin-string';
 
 const extensions = ['.ts', '.tsx'];
@@ -13,10 +14,14 @@ export default [
     input: inputFile,
     output: { dir: outputDir, format: 'esm' },
     plugins: [
-      alias({
-        entries: [{ find: /^(.*)\.(html|css)\?raw$/, replacement: '$1.$2' }],
+      postcss({
+        config: { path: './postcss.config.cjs' },
+        extensions: ['.css'],
       }),
-      string({ include: '**/*.{html,css}' }),
+      alias({
+        entries: [{ find: /^(.*)\.(html)\?raw$/, replacement: '$1.$2' }],
+      }),
+      string({ include: '**/*.{html}' }),
       babel({
         extensions,
         babelHelpers: 'bundled',

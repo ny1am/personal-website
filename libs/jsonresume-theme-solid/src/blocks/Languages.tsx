@@ -1,25 +1,23 @@
-import { For } from 'solid-js';
-
 import { ResumeSchema } from '../../gen/schema';
+import { Section } from '../components';
 
 type Props = { languages: Required<ResumeSchema>['languages'] };
 
 export function Languages(props: Props) {
   return (
-    <section id="languages">
-      <h2>Languages</h2>
-      <For each={props.languages}>
-        {(language) => (
-          <div class="item">
-            {language.language && <div class="language">{language.language}</div>}
-            {language.fluency && (
-              <div class="fluency">
-                <em>{language.fluency}</em>
-              </div>
+    <Section title="Languages">
+      <ul class="grid grid-cols-[max-content_auto] items-baseline gap-y-2 gap-x-8">
+        {props.languages.map((language) => (
+          <li class="contents">
+            {language.language && (
+              <span class="col-start-1 text-sm font-semibold uppercase">
+                {language.language}
+              </span>
             )}
-          </div>
-        )}
-      </For>
-    </section>
+            {language.fluency && <span>{language.fluency}</span>}
+          </li>
+        ))}
+      </ul>
+    </Section>
   );
 }

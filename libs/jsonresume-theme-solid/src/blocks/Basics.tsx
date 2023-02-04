@@ -5,24 +5,15 @@ type Props = { basics: Required<ResumeSchema>['basics'] };
 export function Basics(props: Props) {
   const basics = props.basics;
   return (
-    <section class="heading">
+    <section>
       <header>
-        <h1>{basics.name}</h1>
-        <div class="contact">
-          {basics.email && (
-            <span class="detail">
-              <a href={`mailto:${basics.email}`}>{basics.email}</a>
-            </span>
-          )}
-          {basics.phone && <span class="detail">{basics.phone}</span>}
-          {basics.url && (
-            <span class="detail">
-              <a href={basics.url}>{basics.url}</a>
-            </span>
-          )}
+        <h1 class="text-3xl font-bold">{basics.name}</h1>
+        <div class="mt-3 flex gap-4 [&>a]:text-sky-600 ">
+          {basics.email && <a href={`mailto:${basics.email}`}>{basics.email}</a>}
+          {basics.url && <a href={basics.url}>{basics.url}</a>}
         </div>
       </header>
-      {basics.summary && <p>{basics.summary}</p>}
+      {basics.summary && <p class="mt-3">{basics.summary}</p>}
     </section>
   );
 }
