@@ -26,7 +26,7 @@
       "position": "Senior frontend software engineer",
       "startDate": "2021-10-01",
       "endDate": "2022-12-01",
-      "summary": "Agena Tech is a Swedish company with many projects and products from e-commerce to healthcare. I designed architecture and led a small team on a multi-collaborative WCAG-compliant healthcare project. In parallel, I worked in a dynamic, fast-paced team on multiple startup/e-commerce products.",
+      "summary": "I designed architecture and led a small team on a multi-collaborative WCAG-compliant healthcare project. In parallel, I worked in a dynamic, fast-paced team on multiple startup/e-commerce products.",
       "highlights": [
         "Typescript",
         "React.js / Next.js / React Query",
@@ -63,7 +63,7 @@
       "position": "Frontend software engineer",
       "startDate": "2016-08-01",
       "endDate": "2017-09-30",
-      "summary": "REMIT is a Ukrainian outsourcing company with exposure to the Swedish tech industry. I created many web apps from scratch, gained experience of working in a huge enterprise project with multiple teams and products.",
+      "summary": "I created many web apps from scratch, gained experience of working in a huge enterprise project with multiple teams and products.",
       "highlights": ["React.js / Redux, React Boilerplate", "Angular"]
     },
     {
@@ -72,7 +72,7 @@
       "position": "Fullstack software engineer",
       "startDate": "2011-02-01",
       "endDate": "2016-07-01",
-      "summary": "RomexSoft is an outsourcing company that develops quality software. My primary role was to develop new features for the existing projects. I focused on developing soft skills and learning how to work as a tech team with tight deadlines. Learned how to use Git, JIRA for a benefit of the team. Owned multiple features on a high-quality healthcare system.",
+      "summary": "My primary role was to develop new features for the existing projects. I focused on developing soft skills and learning how to work as a tech team with tight deadlines. Learned how to use Git, JIRA for a benefit of the team. Owned multiple features on a high-quality healthcare system.",
       "highlights": ["SQL / Hibernate", "Java / Spring / REST", "jQuery / Vanilla JS"]
     }
   ],
@@ -96,13 +96,7 @@
   "skills": [
     {
       "name": "Web Development",
-      "keywords": [
-        "Javascript / Typescript",
-        "React.js / Next.js",
-        "Node.js",
-        "HTML",
-        "CSS"
-      ]
+      "keywords": ["Javascript / Typescript", "React.js / Next.js", "Node.js", "HTML", "CSS"]
     },
     {
       "name": "Mobile Development",
