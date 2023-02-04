@@ -32,10 +32,6 @@ ul {
 section {
   margin: 1em 0 2em;
 }
-blockquote {
-  margin: 0;
-  margin-bottom: 1em;
-}
 
 .heading header h1 {
   font-size: 180%;
@@ -43,27 +39,10 @@ blockquote {
   font-weight: 600;
 }
 
-.heading header h2 {
-  font-size: 140%;
-  margin: 0;
-  font-weight: 400;
-}
-
 .heading header .contact .detail {
   margin: 0 1em 0 0;
 }
 
-.profile {
-  display: inline-block;
-  margin: 0 1em 0 0;
-}
-
-.profile strong,
-.profile span {
-  display: inline-block;
-  margin: 0 1em 0 0;
-}
-/* section / line breaks */
 section h2 {
   font-size: 140%;
   margin: 0 0 1em;
@@ -72,7 +51,6 @@ section h2 {
   font-weight: 400;
 }
 
-/* Experience items */
 .item {
   margin: 0 0 1em;
   padding: 0 0 1em;
@@ -87,10 +65,6 @@ section h2 {
   margin: 0.2em 1em 0.2em 0;
   display: inline-block;
   font-weight: 600;
-}
-
-.item header a {
-  display: inline-block;
 }
 
 .item .position {
@@ -109,7 +83,6 @@ section h2 {
   font-size: 90%;
 }
 
-/* skills */
 #skills .item {
   margin: 0.5em 0;
   padding: 0 0 0.5em;
@@ -131,7 +104,6 @@ section h2 {
   vertical-align: top;
 }
 
-/* education */
 #education .item {
   display: inline-block;
   vertical-align: top;
