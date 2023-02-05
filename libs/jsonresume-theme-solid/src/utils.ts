@@ -1,5 +1,5 @@
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
+  month: 'long',
   year: 'numeric',
   timeZone: 'UTC',
 });

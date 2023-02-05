@@ -9,9 +9,9 @@ export function DateRange(props: Props) {
   const formattedEndDate = props.endDate ? formatDate(props.endDate) : 'Present';
 
   return (
-    <div class={`text-gray-500 dark:text-gray-400 print:text-gray-300 ${props.class || ''}`}>
+    <div class={`text-sm text-gray-500 dark:text-gray-400  ${props.class || ''}`}>
       <span class="whitespace-nowrap">{formattedStartDate}</span>
-      <span class="whitespace-pre before:content-['_-_']">{formattedEndDate}</span>
+      <span class="whitespace-pre before:content-['_–_']">{formattedEndDate}</span>
     </div>
   );
 }
