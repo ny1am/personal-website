@@ -8,7 +8,7 @@ export function Basics(props: Props) {
     <section>
       <header>
         <h1 class="text-3xl font-bold">{basics.name}</h1>
-        <div class="mt-3 flex gap-4 [&>a]:text-sky-600 ">
+        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 [&>a]:text-sky-600 ">
           {basics.email && <a href={`mailto:${basics.email}`}>{basics.email}</a>}
           {basics.url && <a href={basics.url}>{basics.url}</a>}
         </div>
