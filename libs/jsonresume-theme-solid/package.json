@@ -2,15 +2,13 @@
   "name": "jsonresume-theme-solid",
   "type": "module",
   "private": true,
-  "files": ["dist"],
+  "files": ["dist", "src"],
   "main": "dist/main.js",
   "module": "dist/main.js",
   "types": "dist/main.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/main.js",
-      "node": "./dist/main.js"
-    }
+    ".": "./dist/main.js",
+    "./src/": "./src/"
   },
   "scripts": {
     "build": "rollup -c",

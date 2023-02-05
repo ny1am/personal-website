@@ -10,7 +10,8 @@
     "lint": "eslint src/**/*.{ts,astro}"
   },
   "dependencies": {
-    "@pw/data": "workspace:data@*"
+    "@pw/data": "workspace:data@*",
+    "@pw/jsonresume-theme-solid": "workspace:jsonresume-theme-solid@*"
   },
   "nx": {
     "implicitDependencies": ["generate-resume", "data"],

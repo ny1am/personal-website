@@ -11,13 +11,13 @@ const { title, description, class: className } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <BaseHead title={title} description={description} />
   </head>
   <body
     class:list={[
-      'bg-gray-900 text-white px-4 py-6 max-w-4xl mx-auto flex flex-col min-h-screen min-w-[20rem]',
+      'bg-gray-900 text-white px-4 py-6 max-w-4xl mx-auto min-h-screen min-w-[20rem]',
       className,
     ]}
   >

@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@astrojs/image': ^0.14.0
+      '@astrojs/solid-js': ^2.0.2
       '@astrojs/tailwind': ^3.0.1
       '@babel/core': ^7.20.12
       '@babel/preset-env': ^7.20.2
@@ -53,6 +54,7 @@ importers:
       sharp: 0.31.3
       solid-js: 1.6.10
     devDependencies:
+      '@astrojs/solid-js': 2.0.2_kp5ivkcya5u6ceupcga4aht6xm
       '@babel/core': 7.20.12
       '@babel/preset-env': 7.20.2_@babel+core@7.20.12
       '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
@@ -94,8 +96,10 @@ importers:
   apps/website:
     specifiers:
       '@pw/data': workspace:data@*
+      '@pw/jsonresume-theme-solid': workspace:jsonresume-theme-solid@*
     dependencies:
       '@pw/data': link:../../data
+      '@pw/jsonresume-theme-solid': link:../../libs/jsonresume-theme-solid
 
   data:
     specifiers: {}
@@ -198,6 +202,20 @@ packages:
     dependencies:
       prismjs: 1.29.0
     dev: false
+
+  /@astrojs/solid-js/2.0.2_kp5ivkcya5u6ceupcga4aht6xm:
+    resolution: {integrity: sha512-fQMOfBcmvYHXJg8vR0LgoeBgrlLHrxnlzxxmPkDKrGPBRh9y3si2d/ChpMyMRL3ibAOqWTs7Xs5gOYqrFZbw3g==}
+    engines: {node: '>=16.12.0'}
+    peerDependencies:
+      solid-js: ^1.4.3
+    dependencies:
+      babel-preset-solid: 1.6.10_@babel+core@7.20.12
+      solid-js: 1.6.10
+      vitefu: 0.2.4_vite@4.1.1
+    transitivePeerDependencies:
+      - '@babel/core'
+      - vite
+    dev: true
 
   /@astrojs/tailwind/3.0.1_wbobjjz2uhjbm2mraa2ak5h264:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
