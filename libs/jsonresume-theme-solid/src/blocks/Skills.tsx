@@ -10,7 +10,9 @@ export function Skills(props: Props) {
         {props.skills.map((skill) => (
           <li class="mt-4 first:mt-0 print:contents sm:contents">
             {skill.name && (
-              <div class="col-start-1 text-sm font-semibold uppercase">{skill.name}</div>
+              <div class="col-start-1 text-sm font-semibold uppercase dark:text-gray-500">
+                {skill.name}
+              </div>
             )}
             {(skill.keywords ?? []).length > 0 && (
               <div>{(skill.keywords ?? []).join(', ')}</div>

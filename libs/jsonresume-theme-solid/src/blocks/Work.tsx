@@ -10,7 +10,11 @@ export function Work(props: Props) {
         <div class="mb-12 break-inside-avoid">
           <div>
             {item.position && <span class="font-bold">{item.position}</span>}
-            {item.name && <span class="italic before:content-['_at_']">{item.name}</span>}
+            {item.name && (
+              <span class="whitespace-nowrap italic before:content-['_at_'] dark:text-gray-500">
+                {item.name}
+              </span>
+            )}
           </div>
           <DateRange {...item} />
           {item.summary && <p class="mt-2 mb-3">{item.summary}</p>}
