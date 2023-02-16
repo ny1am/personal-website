@@ -1,16 +1,23 @@
+/* eslint-disable solid/reactivity */
 import { ResumeSchema } from '../gen/schema.d';
 import { Basics, Education, Languages, Skills, Work } from './blocks';
+import { deleteByPath } from './utils';
 
-type Props = { schema: ResumeSchema };
+type Props = { schema: ResumeSchema; ignore?: string[] };
 
 const App = (props: Props) => {
+  const schema = (props.ignore ?? []).reduce(
+    (res, path) => deleteByPath(res, path),
+    props.schema
+  );
+
   return (
     <>
-      {props.schema.basics && <Basics basics={props.schema.basics} />}
-      {!!props.schema.skills?.length && <Skills skills={props.schema.skills} />}
-      {!!props.schema.work?.length && <Work work={props.schema.work} />}
-      {!!props.schema.education?.length && <Education education={props.schema.education} />}
-      {!!props.schema.languages?.length && <Languages languages={props.schema.languages} />}
+      {schema.basics && <Basics basics={schema.basics} />}
+      {!!schema.skills?.length && <Skills skills={schema.skills} />}
+      {!!schema.work?.length && <Work work={schema.work} />}
+      {!!schema.education?.length && <Education education={schema.education} />}
+      {!!schema.languages?.length && <Languages languages={schema.languages} />}
     </>
   );
 };
