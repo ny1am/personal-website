@@ -15,10 +15,10 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
         widths={[288, 416]}
         sizes="(max-width: 640px) 144px, 208px"
         aspectRatio="1:1"
-        class="shrink-0 aspect-square box-content rounded-full border border-gray-600 w-36 sm:w-52"
+        class="shrink-0 aspect-square box-content rounded-full border border-neutral-700 w-36 sm:w-52"
         alt=""
       />
-      <div class="mt-4 w-min min-w-[16rem] grow [&>p]:text-lg">
+      <div class="mt-4 w-min min-w-[16rem] grow">
         <p>
           <span class="mr-2 text-2xl">👋</span> I'm Nazar, a Javascript software engineer that focuses
           on front end tools such as React and Typescript.
@@ -27,7 +27,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
           My area of expertise is React ecosystem, but I also have experience in backend
           software development.
         </p>
-        <Socials class="mt-4" />
+        <Socials class="mt-6 text-sm" />
       </div>
     </div>
   </main>

@@ -9,6 +9,6 @@ const { class: className } = Astro.props;
 const items = resume.basics.profiles.map(({ network, url }) => ({ url, text: network }));
 ---
 
-<div class:list={['[&>a]:mr-5 [&>a]:text-blue-400', className]}>
+<div class:list={['[&>a]:mr-5 [&>a]:text-sky-600', className]}>
   {items.map(({ text, url }) => <a href={url}>{text}</a>)}
 </div>
