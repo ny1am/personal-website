@@ -6,9 +6,6 @@
     "email": "nazar.yavnyy@pm.me",
     "url": "https://nazaryy.dev",
     "summary": "I am a Javascript Developer that focuses on front end tools such as React and Typescript. I have a high bar for the quality of code and quality of user experience. My area of expertise is React ecosystem, but I also have experience in backend software development.",
-    "location": {
-      "address": "Lviv, Ukraine (currently in Croatia)"
-    },
     "profiles": [
       { "network": "GitHub", "username": "ny1am", "url": "https://github.com/ny1am" },
       {
@@ -80,7 +77,7 @@
     {
       "institution": "London Institute of Leadership and Management",
       "url": "https://www.i-l-m.com",
-      "studyType": "Lead-IT Program",
+      "area": "Lead-IT Program",
       "startDate": "2017-10-01",
       "endDate": "2018-03-31"
     },
