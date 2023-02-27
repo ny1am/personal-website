@@ -1,5 +1,3 @@
-import '@total-typescript/ts-reset/dist/filter-boolean';
-
 /* eslint-disable solid/reactivity */
 import { ResumeSchema } from '../gen/schema.d';
 import { Basics, Education, Languages, Skills, Work } from './blocks';
