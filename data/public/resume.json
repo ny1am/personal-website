@@ -7,7 +7,11 @@
     "url": "https://nazaryy.dev",
     "summary": "I am a Javascript Developer that focuses on front end tools such as React and Typescript. I have a high bar for the quality of code and quality of user experience. My area of expertise is React ecosystem, but I also have experience in backend software development.",
     "profiles": [
-      { "network": "GitHub", "username": "ny1am", "url": "https://github.com/ny1am" },
+      {
+        "network": "GitHub",
+        "username": "ny1am",
+        "url": "https://github.com/ny1am"
+      },
       {
         "network": "LinkedIn",
         "username": "Nazar Yavnyy",
@@ -23,7 +27,7 @@
       "position": "Senior frontend software engineer",
       "startDate": "2021-10-01",
       "endDate": "2022-11-01",
-      "summary": "I designed architecture and led a small team on a multi-collaborative WCAG-compliant healthcare project. In parallel, I worked in a dynamic, fast-paced team on multiple startup/e-commerce products.",
+      "summary": "Designed architecture and led a small team on a multi-collaborative WCAG-compliant healthcare project. In parallel, I worked in a dynamic, fast-paced team on multiple startup/e-commerce products.",
       "highlights": [
         "Typescript",
         "React.js / Next.js / React Query",
@@ -60,7 +64,7 @@
       "position": "Frontend software engineer",
       "startDate": "2016-08-01",
       "endDate": "2017-09-30",
-      "summary": "I created many web apps from scratch, gained experience of working in a huge enterprise project with multiple teams and products.",
+      "summary": "I created many small web apps from scratch, gained experience of working in a huge enterprise project with multiple teams and products.",
       "highlights": ["React.js / Redux, React Boilerplate", "Angular"]
     },
     {
