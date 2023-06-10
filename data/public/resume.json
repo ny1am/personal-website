@@ -21,6 +21,25 @@
   },
   "work": [
     {
+      "name": "FutureLog",
+      "location": "Remote",
+      "url": "https://www.futurelog.com/",
+      "position": "Lead frontend software engineer",
+      "startDate": "2023-03-20",
+      "summary": "I led a team of five frontend developers in updating the technology stack of a major project, bringing it in line with industry standards.",
+      "highlights": ["Typescript", "React.js / Next.js"]
+    },
+    {
+      "name": "Techery",
+      "location": "Remote",
+      "url": "https://techery.io",
+      "position": "Fullstack software engineer",
+      "startDate": "2022-12-12",
+      "endDate": "2023-03-15",
+      "summary": "Worked on a highly scalable e-commerce product with a lot of 3rd party integrations.",
+      "highlights": ["Typescript", "React.js / Next.js", "NestJS"]
+    },
+    {
       "name": "Agena Tech",
       "location": "Remote",
       "url": "https://agenatech.com",
