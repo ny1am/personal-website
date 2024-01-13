@@ -7,7 +7,7 @@ export function Basics(props: Props) {
   const urls = [
     basics.email && { url: `mailto:${basics.email}`, text: basics.email },
     basics.url && { url: basics.url, text: basics.url },
-  ].filter(Boolean);
+  ].filter(Boolean) as { url: string; text: string }[]; //TODO: ts-reset issue
 
   return (
     <section>
