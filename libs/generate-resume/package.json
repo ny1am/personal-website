@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "ts-node --esm src/index.ts",
+    "build": "bun src/index.ts",
     "validate": "resumed validate ../../data/public/resume.json",
     "lint": "eslint src/**/*"
   },

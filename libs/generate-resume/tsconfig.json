@@ -3,9 +3,5 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext"
-  },
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true
   }
 }
