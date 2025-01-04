@@ -6,6 +6,11 @@
 
 Always work in progress
 
+## Development
+
+- node.js recommended version specified in `.nvmrc`
+- bun recommended version specified in `.bun-version`
+
 ## License
 
 MIT License. See `LICENSE` for more information.
