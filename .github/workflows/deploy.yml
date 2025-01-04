@@ -13,7 +13,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment: netlify
+    environment:
+      name: netlify
+      url: ${{ steps.deploy_url.outputs.URL }}
     steps:
       - uses: actions/checkout@v3
 
@@ -37,4 +39,12 @@ jobs:
             --dir apps/website/dist \
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
-            $PROD_FLAG
+            $PROD_FLAG \
+            --json \
+            > result.json
+
+      - name: generate deploy URL
+        id: deploy_url
+        run: |
+          URL=$(jq -r '.deploy_url' result.json)
+          echo "URL=$URL" >> "$GITHUB_OUTPUT"
