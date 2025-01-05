@@ -1,5 +1,4 @@
-/* eslint-disable solid/reactivity */
-import { ResumeSchema } from '../gen/schema.d';
+import type { ResumeSchema } from '../gen/schema.d';
 import { Basics, Education, Languages, Skills, Work } from './blocks';
 import { deleteByPath } from './utils';
 

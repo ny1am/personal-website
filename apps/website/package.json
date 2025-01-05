@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "lint": "eslint src/**/*.{ts,astro}"
+    "astro": "astro"
   },
   "dependencies": {
     "@pw/data": "workspace:data@*",

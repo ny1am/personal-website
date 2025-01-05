@@ -13,7 +13,6 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "vite dev",
-    "lint": "eslint .",
     "gen": "bun ./scripts/schema.ts"
   },
   "dependencies": {

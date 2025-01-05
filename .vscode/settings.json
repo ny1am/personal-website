@@ -10,9 +10,7 @@
     "tsconfigs",
     "WCAG"
   ],
-  "eslint.validate": ["javascript", "astro", "typescript"],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "prettier.prettierPath": "node_modules/prettier",
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   }

@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "build": "bun src/index.ts",
-    "validate": "resumed validate ../../data/public/resume.json",
-    "lint": "eslint src/**/*"
+    "validate": "resumed validate ../../data/public/resume.json"
   },
   "dependencies": {
     "@pw/jsonresume-theme-solid": "workspace:jsonresume-theme-solid@*"
