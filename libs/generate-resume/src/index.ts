@@ -18,7 +18,15 @@ async function generatePdf({ inputFilePath, outputFilePath }: GeneratePDF) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: [
+      '--ignore-certificate-errors',
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-accelerated-2d-canvas',
+      '--disable-gpu',
+    ],
+  });
   const page = await browser.newPage();
 
   await page.setContent(html, { waitUntil: 'domcontentloaded' });

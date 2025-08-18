@@ -29,7 +29,7 @@
     "json-schema-to-typescript": "^15.0.3",
     "nx": "^20.3.0",
     "postcss": "^8.4.49",
-    "puppeteer": "^23.11.1",
+    "puppeteer": "^24.16.2",
     "resume-schema": "^1.0.1",
     "resumed": "^4.0.0",
     "rollup": "^4.29.2",
