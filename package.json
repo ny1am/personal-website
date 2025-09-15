@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.18.0",
-    "@astrojs/tailwind": "^5.1.4",
-    "astro": "^5.1.2",
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.7",
     "solid-js": "^1.9.9"
   },
   "devDependencies": {
@@ -23,21 +25,21 @@
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.4",
     "@total-typescript/ts-reset": "^0.6.1",
-    "@types/node": "^22.10.5",
-    "autoprefixer": "^10.4.20",
+    "@types/node": "^22.18.3",
+    "autoprefixer": "^10.4.21",
     "babel-preset-solid": "^1.9.9",
     "json-schema-to-typescript": "^15.0.4",
     "nx": "^21.5.2",
     "postcss": "^8.5.6",
     "puppeteer": "^24.21.0",
     "resume-schema": "^1.0.1",
-    "resumed": "^4.0.0",
+    "resumed": "^6.0.0",
     "rollup": "^4.50.2",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-string": "^3.0.0",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
-    "vite": "^6.0.7",
+    "vite": "^7.1.5",
     "vite-plugin-solid": "^2.11.8"
   }
 }

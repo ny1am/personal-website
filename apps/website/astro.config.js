@@ -1,9 +1,12 @@
 import image from '@astrojs/image';
 import solid from '@astrojs/solid-js';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://nazaryy.dev/',
-  integrations: [solid(), tailwind({ config: { applyBaseStyles: false } }), image()],
+  vite: {
+    plugins: [tailwindcss({ config: { applyBaseStyles: false } })],
+  },
+  integrations: [solid(), image()],
 });
