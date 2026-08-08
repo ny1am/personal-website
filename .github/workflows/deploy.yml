@@ -17,13 +17,16 @@ jobs:
       name: netlify
       url: ${{ steps.deploy_url.outputs.URL }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: .nvmrc
+          sparse-checkout-cone-mode: false
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v7
         with:
           node-version-file: '.nvmrc'
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: dist
           path: apps/website/dist
@@ -35,7 +38,6 @@ jobs:
         id: netlify_deploy
         run: |
           netlify deploy \
-            --filter website \
             --dir apps/website/dist \
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \

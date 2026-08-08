@@ -11,6 +11,13 @@ Always work in progress
 - node.js recommended version specified in `.nvmrc`
 - bun recommended version specified in `.bun-version`
 
+## Deployment
+
+Use github action:
+
+- `main` - directly to prod
+- any other branch - preview
+
 ## License
 
 MIT License. See `LICENSE` for more information.

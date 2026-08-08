@@ -1,5 +1,5 @@
-export function deleteByPath(obj: object, path: string): object {
-  return _deleteByPath(obj, path) as object;
+export function deleteByPath<T extends object>(obj: T, path: string): T {
+  return _deleteByPath(obj, path) as T;
 }
 
 export function _deleteByPath(obj: unknown, path: string): unknown {
@@ -25,7 +25,7 @@ export function _deleteByPath(obj: unknown, path: string): unknown {
   }
 
   if (typeof reducedObject === 'object') {
-    return { ...obj, [current]: deleteByPath(reducedObject, tail.join('.')) };
+    return { ...obj, [current]: _deleteByPath(reducedObject, tail.join('.')) };
   }
 
   return obj;
