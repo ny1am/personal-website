@@ -1,11 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-   <style>
-      text {
-         font: italic 24px sans-serif;
-         fill: #fc4b1e;
-      }
-   </style>
-   <text x="0" y="20">
-      yy
-   </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <g
+    fill="none"
+    stroke="#fc4b1e"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M6 8L10.1 17" />
+    <path d="M15 8L9 19Q7 23.5 4.6 24.9" />
+    <path d="M19 8L23.1 17" />
+    <path d="M28 8L22 19Q17.5 25.2 9.5 25.8Q6.2 26 4.6 24.9" />
+  </g>
 </svg>
