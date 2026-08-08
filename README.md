@@ -13,7 +13,7 @@ Always work in progress
 
 ## Deployment
 
-Use github action:
+Push commits or use github action:
 
 - `main` - directly to prod
 - any other branch - preview
