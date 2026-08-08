@@ -8,8 +8,6 @@
     "resume:dev": "nx dev jsonresume-theme-solid"
   },
   "dependencies": {
-    "@astrojs/image": "^0.18.0",
-    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/postcss": "^4.1.13",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.7",
@@ -37,6 +35,7 @@
     "rollup": "^4.50.2",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-string": "^3.0.0",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
     "vite": "^7.1.5",

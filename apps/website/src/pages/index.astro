@@ -1,6 +1,7 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
+import userpic from '@/assets/userpic.png';
 import Footer from '@/components/Footer.astro';
 import Socials from '@/components/Socials.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/config';
@@ -11,10 +12,12 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
   <main class="grow">
     <div class="mt-12 flex flex-wrap items-start gap-8 sm:mt-[22%] sm:gap-16">
       <Picture
-        src={import('public/userpic-2025-fotor-20250818131158.png')}
+        src={userpic}
+        width={416}
+        height={416}
         widths={[288, 416]}
         sizes="(max-width: 640px) 144px, 208px"
-        aspectRatio="1:1"
+        formats={['avif', 'webp']}
         class="box-content aspect-square w-36 shrink-0 rounded-full border border-neutral-700 sm:w-52"
         alt=""
       />
