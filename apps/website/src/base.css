@@ -1,11 +1,15 @@
 @import 'tailwindcss';
 
-@tailwind base;
-@layer base {
-  a {
-    @apply hover:underline;
-  }
+@theme {
+  --color-accent: #ff7043;
 }
 
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  a {
+    @apply text-neutral-100 transition-colors hover:text-accent hover:underline;
+  }
+
+  a[aria-current='page'] {
+    @apply text-accent;
+  }
+}

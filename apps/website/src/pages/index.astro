@@ -3,14 +3,13 @@ import { Picture } from 'astro:assets';
 
 import userpic from '@/assets/userpic.png';
 import Footer from '@/components/Footer.astro';
-import Socials from '@/components/Socials.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/config';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} class="flex flex-col">
-  <main class="grow">
-    <div class="mt-12 flex flex-wrap items-start gap-8 sm:mt-[22%] sm:gap-16">
+  <main class="flex grow items-center">
+    <div class="flex w-full flex-wrap items-start gap-8 sm:gap-16">
       <Picture
         src={userpic}
         width={416}
@@ -30,7 +29,6 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
           My area of expertise is React ecosystem, but I also have experience in backend
           software development.
         </p>
-        <Socials class="mt-6 text-sm" />
       </div>
     </div>
   </main>
