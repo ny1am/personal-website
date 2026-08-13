@@ -1,0 +1,50 @@
+---
+import Footer from '@/components/Footer.astro';
+import GitIcon from '@/components/GitIcon.astro';
+import { tools } from '@/data/tools';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Tools - Nazar Yavnyy"
+  description="Things I build and use."
+  class="flex flex-col"
+>
+  <main class="grow">
+    <h1 class="text-3xl font-semibold tracking-tight text-neutral-100">Tools</h1>
+    <p class="mt-1 text-sm text-neutral-400">Things I build and use.</p>
+
+    <ul class="mt-8 grid grid-cols-[repeat(auto-fill,minmax(16rem,1fr))] gap-3">
+      {
+        tools.map((tool) => (
+          <li class="flex flex-col gap-2 rounded-md border border-neutral-700 p-4">
+            <div class="flex items-center justify-between gap-x-2.5">
+              <h2 class="font-medium text-neutral-100">
+                <a href={tool.url}>
+                  {tool.name}
+                </a>
+              </h2>
+              {tool.repo && (
+                <a
+                  href={tool.repo}
+                  aria-label={`${tool.name} source repository`}
+                >
+                  <GitIcon />
+                </a>
+              )}
+            </div>
+
+            <p class="grow whitespace-pre-line text-sm text-neutral-400">{tool.description}</p>
+
+            {(tool.year || tool.tags?.length) && (
+              <p class="border-t border-neutral-700 pt-2 font-mono text-xs tracking-wider text-neutral-400 uppercase">
+                {[tool.year, ...(tool.tags ?? [])].filter(Boolean).join(' · ')}
+              </p>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+  <Footer />
+</BaseLayout>

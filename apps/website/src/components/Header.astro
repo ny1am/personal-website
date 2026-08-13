@@ -1,0 +1,35 @@
+---
+import resume from '@pw/data/public/resume.json';
+
+const profiles = resume.basics.profiles.map(({ network, url }) => ({ text: network, url }));
+
+const current = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const isCurrent = (href: string) => current === href;
+---
+
+<header
+  class="mb-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-b-neutral-700 pb-6 text-sm"
+>
+  <nav class="flex items-center gap-x-6">
+    <a
+      href="/"
+      aria-label="Home"
+      aria-current={isCurrent('/') ? 'page' : undefined}
+      class="flex items-center"
+    >
+      <img src="/favicon.svg" alt="" width="20" height="20" />
+    </a>
+    <a href="/tools" aria-current={isCurrent('/tools') ? 'page' : undefined}>Tools</a>
+  </nav>
+
+  <nav class="flex items-center gap-x-6 sm:ml-auto">
+    {
+      profiles.map(({ text, url }) => (
+        <a href={url}>
+          {text}
+        </a>
+      ))
+    }
+    <a href="/resume.pdf" aria-label="Resume (PDF)">Resume</a>
+  </nav>
+</header>
